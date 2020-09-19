@@ -21,9 +21,9 @@
         public override string AuthorContact => "NeuralNetworkTODO: Add author email";
 
         // GHB note: if using the provided "About" component this URL is output there
-        public virtual Uri PluginURL => new Uri("https://github.com/philipbelesky/groundhog/");
+        public virtual Uri PluginURL => new Uri("https://github.com/kaiaurelienzhu/NeuralNetwork/");
 
         // GHB note: if using the provided "About" component this URL is parsed there
-        public virtual Uri ReleasesFeed => new Uri("https://github.com/philipbelesky/groundhog/releases.atom");
+        public virtual Uri ReleasesFeed => new Uri("https://github.com/kaiaurelienzhu/NeuralNetwork/");
     }
 }

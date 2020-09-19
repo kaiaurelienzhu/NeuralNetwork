@@ -145,6 +145,10 @@
   </Choose>
   <PropertyGroup>
   </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "C:\Users\User\AppData\Roaming\Grasshopper\Libraries\$(ProjectName).gha"
+copy /Y "$(TargetDir)$(ProjectName).dll" "C:\Users\kai\AppData\Roaming\Grasshopper\Libraries\$(ProjectName).gha"</PostBuildEvent>
+  </PropertyGroup>
   <!-- DEBUG BUILDS (start Rhinoceros) -->
   <Choose>
     <!-- macOS Build Path -->

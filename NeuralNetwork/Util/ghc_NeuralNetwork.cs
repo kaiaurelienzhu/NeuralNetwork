@@ -29,10 +29,10 @@
             // You can often supply default values when creating parameters.
             // All parameters must have the correct access type. If you want
             // to import lists or trees of values, modify the ParamAccess flag.
-            pManager.AddPlaneParameter("Plane", "P", "Base plane for spiral", GH_ParamAccess.item, Plane.WorldXY);
-            pManager.AddNumberParameter("Inner Radius", "R0", "Inner radius for spiral", GH_ParamAccess.item, 1.0);
-            pManager.AddNumberParameter("Outer Radius", "R1", "Outer radius for spiral", GH_ParamAccess.item, 10.0);
-            pManager.AddIntegerParameter("Turns", "T", "Number of turns between radii", GH_ParamAccess.item, 10);
+            pManager.AddPointParameter("Data Points", "dataPoints", "Input Training Data Points", GH_ParamAccess.list);
+            pManager.AddNumberParameter("Labels", "labels", "Labels of training data", GH_ParamAccess.item);
+            pManager.AddIntegerParameter("Layers", "layers", "Number of layers in neural network", GH_ParamAccess.item, 10);
+            pManager.AddIntegerParameter("Iterations", "iterations", "Number of iterations to train neural network", GH_ParamAccess.item, 10);
 
             // If you want to change properties of certain parameters,
             // you can use the pManager instance to access them by index:
